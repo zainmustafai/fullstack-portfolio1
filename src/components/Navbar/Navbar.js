@@ -3,6 +3,8 @@ import './Navbar.css'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import { motion } from 'framer-motion';
 
+
+
 const menuItems=[
   {text:'Home',id: '#hero'},
   {text:'ABOUT',id: '#about'},
