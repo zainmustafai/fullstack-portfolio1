@@ -7,7 +7,12 @@ const ProjectGrid = ({projectArry,}) => {
     >
         {
             projectArry.map((obj)=>{
-                return <ProjectCard projectObject={obj} />
+              let i=1000,j=500;
+              i=i+j;
+                return <ProjectCard 
+                projectObject={obj}
+                animationDuration={i}
+                />
             })
         }
     </div>

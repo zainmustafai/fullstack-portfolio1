@@ -22,10 +22,19 @@ const Portfolio = () => {
     }
   }
   return (
-    <section id='portfolio' className='portfolio-section w-full'>
+    <section 
+    id='portfolio' 
+    className='portfolio-section w-full'
+    data-aos="fade-up"
+    data-aos-once='true'
+
+    
+    >
         <SectionHeading text={"PORTFOLIO"} colorCode={"45474A"}/>
         <div className=' tabs w-full'>
-          <ul className='flex items-center justify-around'>
+          {/* Tabs */}
+          <ul className='flex items-center justify-around'
+          >
             {
               tabs.map((item)=>{
                 return<li>
@@ -41,7 +50,9 @@ const Portfolio = () => {
         </div>
         <div className='px-12 pt-6'>
           {/* Grid Container  */}
-          <ProjectGrid projectArry={gridItems}/>
+          <ProjectGrid projectArry={gridItems}
+          data-aos="fade-up"
+          />
         </div>
         
     </section>
