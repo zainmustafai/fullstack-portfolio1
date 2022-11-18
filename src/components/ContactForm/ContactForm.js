@@ -6,7 +6,7 @@ import TriangleClipPath from '../TriangleClipPath/TriangleClipPath'
 const ContactForm = () => {
   return (
     
-<div classNameName="w-full h-screen">
+<div className="w-full h-screen bg-[#252934]">
     
     <div className="bg-[#252934] h-[50vh] mt-6">
     <TriangleClipPath/>
@@ -14,7 +14,10 @@ const ContactForm = () => {
     </div>
     <div className="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
         <div className="bg-gray-900 w-full shadow rounded p-8 sm:p-12 -mt-72">
-            <form action="" method="post">
+            <form action="" method="post"
+            data-aos="fade-up"
+            data-aos-once='true'
+            >
                 <div className="md:flex items-center mt-12">
                     <div className="w-full md:w-1/2 flex flex-col">
                         <label className="font-semibold leading-none text-gray-300">Name</label>
@@ -39,7 +42,7 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full mt-[2%]">
-                    <Button text={"Send Messages"}/>
+                    <Button text={"Send Message"}/>
                 </div>
             </form>
         </div>

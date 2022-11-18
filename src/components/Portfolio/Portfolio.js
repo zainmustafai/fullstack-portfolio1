@@ -37,9 +37,9 @@ const Portfolio = () => {
           >
             {
               tabs.map((item)=>{
-                return<li>
+                return<li className='text-lg text-pink-800 font-bold'>
                   <button
-                  key={item.toString()}
+                  key={item}
                   id={item.toString()}
                    onClick={handleTabClick}>
                     {item.toString().toUpperCase()}

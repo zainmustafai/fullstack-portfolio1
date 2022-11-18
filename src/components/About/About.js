@@ -29,13 +29,13 @@ const About = () => {
             >
                 {
                     features.map((items)=>{
-                        
+                        let i=1;
                         return <motion.div
                         whileHover={{ scale: 1.1, }}
                         
                         >
                             <Card
-                            key={items.title}
+                            key= {i+1}
                             imgSrc={polgon}
                             className="inline-block" 
                             title={items.title}

@@ -9,8 +9,8 @@ import "aos/dist/aos.css"; // aos css file
 import { useInView} from "react-intersection-observer"; // ANimate on Visibility 
 import { motion, useAnimation } from "framer-motion"; // Animation Hooks.
 import BlogsSection from '../../components/BlogsSection/BlogsSection'
-import TriangleClipPath from '../../components/TriangleClipPath/TriangleClipPath'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import Footer from '../../components/Footer/Footer'
 // npm i aos --save 
 //Possible  ANIMATION PROPS data-aos="fade-left", fade-right, up, down etc....
 
@@ -18,8 +18,7 @@ const HomePage = () => {
 
   useEffect(()=>{
     Aos.init({
-        //duration:1000,
-
+        duration:1000,
         mirror:true, // reverse animation when scroll past the component.
         anchorPlacement: 'top',
 
@@ -76,6 +75,7 @@ const HomePage = () => {
       <Portfolio/>
       <BlogsSection/>
       <ContactForm/>
+      <Footer/>
     </div>
   )
 }
