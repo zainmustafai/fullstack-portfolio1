@@ -5,7 +5,7 @@ import profilePicture from './dp.svg';
 import './Animation.css'
 
 const skillset=[
-    {title:'CSS', score:90},
+    {title:'Design', score:90},
     {title:'HTML', score:90},
     {title:'React', score:80},
     {title:'JavaScript', score:75},
@@ -45,6 +45,7 @@ const SkillsSection = () => {
                 skillset.map((item)=>
                 {
                     return<div
+                    key={item.title}
                     >
                         <Bar title={item.title} score={item.score} />
                     </div>

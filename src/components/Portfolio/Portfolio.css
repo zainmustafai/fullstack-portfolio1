@@ -1,6 +1,6 @@
 .portfolio-section {
     background-color: #F5F5F5;
-    height: 100vh;
+    height: max-content;
     padding-left: 12%;
     padding-right: 12%;
 }

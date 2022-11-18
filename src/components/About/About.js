@@ -35,6 +35,7 @@ const About = () => {
                         
                         >
                             <Card
+                            key={items.title}
                             imgSrc={polgon}
                             className="inline-block" 
                             title={items.title}

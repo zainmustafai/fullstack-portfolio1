@@ -50,7 +50,7 @@ export const nodeProjects=[
             img: n2
         },
         {
-            title:'Node 1',
+            title:'Node 3',
             type:'Node',
             img: n3
         },

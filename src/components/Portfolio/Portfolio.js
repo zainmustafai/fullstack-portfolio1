@@ -6,7 +6,7 @@ import {AllProjects,csharpProjects,nodeProjects,reactProjects} from './Projects.
 
 const tabs=["all",'react','node','c#'];
 const Portfolio = () => {
-  const [isTabActive,setIsTabActive]=useState(false);
+  //const [isTabActive,setIsTabActive]=useState(false);
   const [gridItems,setGridItems]=useState(AllProjects); //portfolio items
   // change grid items on tab click
   const handleTabClick=(e)=>{
@@ -39,6 +39,7 @@ const Portfolio = () => {
               tabs.map((item)=>{
                 return<li>
                   <button
+                  key={item.toString()}
                   id={item.toString()}
                    onClick={handleTabClick}>
                     {item.toString().toUpperCase()}

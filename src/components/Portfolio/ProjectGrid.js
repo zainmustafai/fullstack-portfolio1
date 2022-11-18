@@ -3,13 +3,14 @@ import ProjectCard from './ProjectCard'
 
 const ProjectGrid = ({projectArry,}) => {
   return (
-    <div className='grid gap-1 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  '
+    <div className='grid gap-2 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  '
     >
         {
             projectArry.map((obj)=>{
               let i=1000,j=500;
               i=i+j;
-                return <ProjectCard 
+                return <ProjectCard
+                key={obj.title}
                 projectObject={obj}
                 animationDuration={i}
                 />
