@@ -12,10 +12,10 @@ const Card = ({title,paragraph,imgSrc,icon}) => {
           </div>
           <img src={imgSrc} alt='icon' className='h-auto w-9/12'/>
         </div>
-        <h2 className='font-bold text-green-800 text-2xl'>
+        <h2 className='font-bold text-white text-2xl'>
             {title}
         </h2>
-        <p className='w-full text-green-800 font-normal'>
+        <p className='w-full text-white font-normal'>
             {paragraph}
         </p>
     </div>

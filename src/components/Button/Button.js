@@ -2,7 +2,7 @@ import {BsArrowRightShort} from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import './Button.css'
 
-const Button = ({text,}) => {
+const Button = ({text,clickEvent}) => {
   return (
     <motion.div
     whileHover={{ scale: 1.1, }}
@@ -10,6 +10,7 @@ const Button = ({text,}) => {
     >
         <button 
         className='btn flex gap-2 items-center'
+        onClick={clickEvent}
         >
             <span>{text}</span>
             <BsArrowRightShort className='  text-4xl '/>

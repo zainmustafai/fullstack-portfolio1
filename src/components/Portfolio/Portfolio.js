@@ -3,9 +3,10 @@ import SectionHeading from '../SectionHeading/SectionHeading'
 import './Portfolio.css'
 import ProjectGrid from './ProjectGrid';
 import {AllProjects,csharpProjects,nodeProjects,reactProjects} from './Projects.js'
+import { useRef } from 'react';
 
 const tabs=["all",'react','node','c#'];
-const Portfolio = () => {
+const Portfolio = ({refVar}) => {
   //const [isTabActive,setIsTabActive]=useState(false);
   const [gridItems,setGridItems]=useState(AllProjects); //portfolio items
   // change grid items on tab click
@@ -24,11 +25,10 @@ const Portfolio = () => {
   return (
     <section 
     id='portfolio' 
-    className='portfolio-section w-full'
+    className='portfolio-section w-full overflow-hidden  px-[2%] sm:px-[12%]'
     data-aos="fade-up"
     data-aos-once='true'
-
-    
+    ref={refVar} 
     >
         <SectionHeading text={"PORTFOLIO"} colorCode={"45474A"}/>
         <div className=' tabs w-full'>
@@ -49,13 +49,12 @@ const Portfolio = () => {
             }
           </ul>
         </div>
-        <div className='px-12 pt-6'>
+        <div className='sm:px-12 pt-6'>
           {/* Grid Container  */}
           <ProjectGrid projectArry={gridItems}
           data-aos="fade-up"
           />
         </div>
-        
     </section>
   )
 }

@@ -5,7 +5,7 @@ const SectionHeading = ({text,colorCode}) => {
     <div className='w-full text-center' style={{paddingTop:'5%',}}>
         <h2
         data-aos="fade-right" 
-        className='about-container w-full text-center text-5xl font-bold'
+        className='about-container w-full text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold'
         style={{color:`#${colorCode}`}}
         >
             {text}

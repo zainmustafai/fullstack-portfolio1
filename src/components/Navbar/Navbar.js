@@ -10,7 +10,7 @@ const menuItems=[
   {text:'HOME',id: '#hero'},
   {text:'ABOUT',id: '#about'},
   {text:'PORTFOLIO',id: '#portfolio'},
-  {text:'BLOG',id: '#blog'},
+  // {text:'BLOG',id: '#blog'},
   {text:'CONTACT',id: '#contact'},
 ]
 
@@ -26,7 +26,7 @@ const Navbar = () => {
     <motion.div className='nav-container w-full py-3  md:pl-8 lg:pl-11 xl:pl-14 flex items-center justify-between shadow-lg'
     
     >
-        <ul className=' menu text-xl text-white font-medium hidden lg:flex  sm:gap-6 md:gap-8 lg:gap-10 '>
+        <ul className=' menu text-xl text-white font-medium hidden md:flex  sm:gap-6 md:gap-8 lg:gap-10 '>
             
           {
             menuItems.map((item)=>{
